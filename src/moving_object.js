@@ -13,8 +13,8 @@ MovingObject.prototype.draw = function(ctx){
     ctx.stroke();
 }
 
-MovingObject.prototype.move = function(canvas, ctx){
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+MovingObject.prototype.move = function(ctx){
+    // ctx.clearRect(0, 0, canvas.width, canvas.height);
     this.draw(ctx);
     this.pos[0] += this.vel[0];
     this.pos[1] += this.vel[1];
